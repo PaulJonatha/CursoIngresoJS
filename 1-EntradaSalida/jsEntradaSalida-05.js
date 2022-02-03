@@ -8,12 +8,18 @@ ej.: "Usted se llama José y tiene 66 años" 	*/
 
 function mostrar()
 {	
-  
-	txtIdNombre.value = alert(txtIdNombre.value);
-	txtIdEdad.value= alert(txtIdEdad.value);
+    let nombre;
+	let edad;
 
-	txtIdNombre.value = "";  //Para sacar el nombre ingresado al terminar.
-    txtIdEdad.value = "";   //Para sacar la edad ingresado al terminar.
+	nombre= document.getElementById("txtIdNombre").value;
+	edad= document.getElementById("txtIdEdad").value;
+
+     //El + para encadenar entre un texto y una variable
+	 alert ("Usted se llama " + nombre +" y tiene " + edad + " años");
+
+	 document.getElementById("txtIdNombre").value = ""; //Para sacar el nombre ingresado al terminar.
+	
+	 document.getElementById("txtIdEdad").value = "";   //Para sacar la edad ingresado al terminar.
 
 	
 }

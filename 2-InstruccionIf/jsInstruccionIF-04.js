@@ -1,5 +1,5 @@
 /*Alumno :Paul Ramirez Benites
-Ejercicio 5
+Ejercicio 4
 */
 
 function mostrar()

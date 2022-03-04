@@ -1,5 +1,6 @@
-
-
+/*Alumno :Paul Ramirez Benites
+Ejercicio 6
+*/
 
 function mostrar()
 

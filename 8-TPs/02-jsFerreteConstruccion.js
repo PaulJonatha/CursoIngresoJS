@@ -1,5 +1,6 @@
 /*
-Alumno: Paul Ramirez
+Alumno: Paul Ramirez Benites
+Tp 2
 
 2.	Para el departamento de Construcción:
 A.	 mostrar la cantidad de alambre a comprar  si se ingresara el largo y el ancho de un terreno rectangular y se debe alambra con tres hilos de alambre.
@@ -13,10 +14,11 @@ function Rectangulo ()
     let ancho;
     let alambre;
 
-    largo=parseInt(document.getElementById("txtIdLargo").value);
-    ancho=parseInt(document.getElementById("txtIdAncho").value);
-    
-    alambre="Se necesita comprar "+((largo+ancho)*3)+" metro de alambre";
+    largo=parseFloat(document.getElementById("txtIdLargo").value);
+    ancho=parseFloat(document.getElementById("txtIdAncho").value);
+    alambre=((2*largo+ancho*2)*3);
+    //-----------------------------Perimetro de rectangulo----------------------------
+    alambre="Se necesita comprar "+(alambre)+" metro de alambre";
     alert(alambre);
 
 }
@@ -25,9 +27,11 @@ function Circulo ()
     let alambre;
     let radio;
     
-    radio=parseInt(document.getElementById("txtIdRadio").value);
+    radio=parseFloat(document.getElementById("txtIdRadio").value);
+    alambre=(2*3.14*radio);
+    //-----------------------------Radio de un circulo--------------------------------
 
-    alambre="Se necesita comprar "+(2*3.14*radio)+" metro de alambre";
+    alambre="Se necesita comprar "+(alambre)+" metro de alambre";
     alert(alambre)
      
 }
@@ -35,18 +39,16 @@ function Materiales ()
 {
     let largo;
     let ancho;
-    let bolsaCemento;
+    let bolsaCemento;   
     let bolsaCal;
-    largo=parseInt(document.getElementById("txtIdLargo").value);
-    ancho=parseInt(document.getElementById("txtIdAncho").value);
-
-    bolsaCemento="Se necesitan "+((largo*ancho)*3)+" bolsas de cemento";
+    largo=parseFloat(document.getElementById("txtIdLargo").value);
+    ancho=parseFloat(document.getElementById("txtIdAncho").value);
     
+    bolsaCemento=((largo*ancho)*3);
+    bolsaCemento="Se necesitan "+(bolsaCemento)+" bolsas de cemento";
     alert(bolsaCemento);
 
-    bolsaCal="Se necesitan "+((largo*ancho)*2)+" bolsas de cal";
+    bolsaCal=((largo*ancho)*2);
+    bolsaCal="Se necesitan "+(bolsaCal)+" bolsas de cal";
     alert(bolsaCal);
-
-
-	
 }

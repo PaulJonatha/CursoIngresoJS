@@ -1,5 +1,5 @@
 /*Alumno :Paul Ramirez Benites
-Ejercicio 5
+Ejercicio 2
 */
 function mostrar()
 {
@@ -10,9 +10,6 @@ function mostrar()
 	if (edad>=18)
     {
        alert("Es mayor de edad");
-
 	}
     
-	
-
 }//FIN DE LA FUNCIÓN

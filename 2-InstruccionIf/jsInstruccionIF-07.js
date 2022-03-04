@@ -1,3 +1,7 @@
+/*Alumno :Paul Ramirez Benites
+Ejercicio 7
+*/
+
 function mostrar()
 {
     let edad;
